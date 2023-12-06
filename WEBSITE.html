@@ -1,0 +1,109 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.avif') no-repeat fixed center;
+      background-size: cover;
+      color: #000;
+      background-color: #017bf5;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      display: flex;
+      align-items: center; /* Center the content vertically */
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .logo {
+      height: auto;
+    }
+
+    .logo:active {
+      background-color: black; /* Adjust the color as needed */
+    }
+
+    /* Added styling for the social icons at the bottom right */
+    .social-icons-bottom-right {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home" style="align-items: center;">
+      <img src="data:image/png;base64,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" alt="Home" class="logo" width="50">
+    </a>
+    <a href="MYPROFILE.html" style="align-items: center;">
+      <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25634105.jpg" alt="About" class="logo" width="50">
+    </a>
+    <a href="myimage.html" style="align-items: center;">
+      <img src="https://i.pinimg.com/474x/52/8d/c9/528dc91d4837ee4c7f4ef111c2289b1f.jpg" alt="Photos" class="logo" width="50">
+    </a>
+    <a href="MYCONTACT.html" style="align-items: center;">
+      <img src="https://i.pinimg.com/564x/59/1b/af/591baf7d74ed60077b97172d5bfaf64e.jpg" alt="Contact" class="logo" width="50">
+    </a>
+  </nav>
+
+  <div style="padding: 10px;">
+  </div>
+<hr> <hr>
+  <header>
+    <table style="width: 100%; text-align: center; vertical-align: middle;">
+      <tr>
+        <td class="social-icons">
+          <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/403394871_742342454402905_3459328998326574567_n.png?_nc_cat=104&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGrzafvJiiR6afbKtdGR9jMK_41x_O243Ar_jXH87bjcGsPBXxTfs9CWo6CHeiKiv2Rij5CWzM4tMApdFAy-DK8&_nc_ohc=H-1FTs061q0AX9rdRd_&_nc_ht=scontent.fmnl17-4.fna&cb_e2o_trans=q&oh=03_AdRs29boRLQX_Vq3jJP1sy9URHgZjkynub8WB7B4NRU3JA&oe=6594BAA7" alt="Social Icon 1" class="logo" width="200">
+        </td>
+        <td colspan="2">
+          <h1 style="color: darkgray;">Hi I'm Miguel Carlo!</h1>
+          
+          <h2 style="color: darkgray;">Welcome to my Personal Website.</h>
+          <h3 style="color: darkgray;"> Hello and welcome! My name is Tapalla, Miguel Carlo and I'm thrilled to share a bit about myself with you. I hail from the vibrant and bustling Barangay West Rembo in the heart of Makati City, a place that holds a special spot in my heart as it is not just my current residence but also the city where I first opened my eyes to the world.At the age of 20, I find myself navigating the exciting journey of early adulthood,
+           where each day brings new experiences and opportunities for growth. Currently, I am pursuing my education at the prestigious University of Makati, a place that has become a second home where knowledge is imparted, friendships are forged, and dreams are nurtured. </h3>
+        
+        </td>
+      </tr>
+    </table>
+  </header>
+  <hr>
+  <hr>
+  <div class="social-icons-bottom-right">
+    <hr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook" class="logo" width="35">
+    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/386881300_261479656923759_6412380317191014686_n.png?stp=dst-png_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=510075&_nc_eui2=AeEuNnAK1P-qRIHFKIvNf_q3HwDP-x4AQaMfAM_7HgBBo65Qk40Mvq5gmLnkuFpmQjgPJqWyd2UVgPbaOQPCeJHy&_nc_ohc=8VRw4sxxD60AX9YrJPs&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&cb_e2o_trans=q&oh=03_AdTihT9YCb5FZbXq9-x1eBOmlBEtlBEp9XjXQklidiv7gA&oe=6594BD4F" alt="Instagram" class="logo" width="40">
+    <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="Twitter" class="logo" width="30">
+    <img src="data:image/png;base64,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" alt="TikTok" class="logo" width="60">
+  <hr>
+  </div>
+
+</body>
+</html>
